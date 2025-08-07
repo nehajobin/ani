@@ -1,0 +1,34 @@
+body {
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #3c338d;
+  font-family: sans-serif;
+}
+
+.bounce-button {
+  padding: 30px 60px;      
+  font-size: 30px;         
+  border: none;
+  border-radius: 12px;
+  background-color: #d35ac9;
+  color: white;
+  cursor: pointer;
+  transition: transform 0.5s ease-in-out;
+}
+
+
+.bounce-button:hover {
+  animation: bounce 0.61s;
+}
+
+
+@keyframes bounce {
+  0%   { transform: translateY(0); }
+  30%  { transform: translateY(-20px); }
+  50%  { transform: translateY(0); }
+  70%  { transform: translateY(-10px); }
+  100% { transform: translateY(0); }
+}
